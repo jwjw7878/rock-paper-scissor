@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #2f5c38;
+  background: linear-gradient(
+    90deg,
+    rgba(47, 92, 56, 1) 0%,
+    rgba(87, 199, 133, 1) 50%,
+    rgba(35, 92, 32, 1) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+/* 박스요소 */
+.card {
+  position: relative;
+  font-family: "Rufina", serif;
+  width: 200px;
+  height: 300px;
+  background-color: white;
+  border: 5px solid black;
+  border-radius: 8px;
+}
+.player {
+  color: white;
+  text-align: center;
+  margin: 10px 0;
+}
+.left-top {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: bold;
+}
+.bottom-right {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transform: rotate(180deg);
+  font-size: 20px;
+  font-weight: bold;
+}
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.middle > .text {
+  font-size: 24px;
+  font-weight: bold;
+}
+.choice {
+  font-size: 50px;
+}
+.choice.small {
+  font-size: 25px;
+}
+
+/* 가위바위보 버튼 */
+.button-area {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.button-area > button {
+  padding: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.user-btn {
+  font-size: 50px;
+}
