@@ -1,16 +1,24 @@
 import React from "react";
 import "../App.css";
 
-export const Box = ({ player, card }) => {
+export const Box = ({ player, card, status }) => {
   return (
     <div className="box">
-      <h2 className="player">{player}</h2>
-      <div className="card">
+      <div
+        className={`${
+          status === "win"
+            ? "card win"
+            : status === "lose"
+            ? "card lose"
+            : "card"
+        }`}
+      >
         <p className="left-top">
           {card && card.name.slice(0, 1).toUpperCase()}
           {card && card.icon[1]}
         </p>
         <div className="middle">
+          <p className="status">{status}</p>
           {card && card.icon[0]}
           <p className="text">{card && card.name}</p>
         </div>
@@ -19,6 +27,7 @@ export const Box = ({ player, card }) => {
           {card && card.icon[1]}
         </p>
       </div>
+      <h2 className="player">{player}</h2>
     </div>
   );
 };
