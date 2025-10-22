@@ -63,7 +63,7 @@ body {
 .card {
   position: relative;
   font-family: "Rufina", serif;
-  padding: 110px 90px;
+  padding: 120px 100px;
   background-color: white;
   border: 5px solid black;
   border-radius: 8px;
@@ -88,7 +88,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
 }
 .bottom-right {
@@ -99,7 +99,7 @@ body {
   align-items: center;
   flex-direction: column;
   transform: rotate(180deg);
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
 }
 .middle {
@@ -113,17 +113,20 @@ body {
   gap: 5px;
 }
 .middle > .text {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
+}
+.status {
+  font-size: 22px;
 }
 .ready {
   font-size: 50px;
 }
 .choice {
-  font-size: 36px;
+  font-size: 40px;
 }
 .choice.small {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 /* 가위바위보 버튼 */
@@ -134,7 +137,7 @@ body {
   gap: 10px;
 }
 .button-area > button {
-  padding: 10px;
+  padding: 16px;
   background-color: white;
   cursor: pointer;
 }
@@ -183,5 +186,52 @@ body {
   /* 가위바위보 */
   .button-area > button {
     padding: 8px;
+  }
+}
+
+/* 데스크탑 */
+@media (min-width: 1800px) {
+  /* 스코어 보드 */
+  .score-board {
+    width: 200px;
+    padding: 16px;
+  }
+  .score-area {
+    font-size: 24px;
+  }
+  .score-reset {
+    padding: 18px;
+    font-size: 20px;
+  }
+  /* 박스(카드) 요소 */
+  .box-area {
+    gap: 150px;
+  }
+  .card {
+    padding: 150px 100px;
+  }
+  .left-top,
+  .bottom-right {
+    font-size: 28px;
+  }
+  .middle > .text {
+    font-size: 32px;
+  }
+  .choice {
+    font-size: 52px;
+  }
+  .choice.small {
+    font-size: 28px;
+  }
+  .status {
+    font-size: 28px;
+  }
+  .player {
+    font-size: 32px;
+  }
+
+  /* 가위바위보 */
+  .button-area > button {
+    padding: 24px;
   }
 }
