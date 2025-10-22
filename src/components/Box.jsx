@@ -1,4 +1,5 @@
 import React from "react";
+import { FaRegQuestionCircle } from "react-icons/fa";
 import "../App.css";
 
 export const Box = ({ player, card, status }) => {
@@ -19,8 +20,8 @@ export const Box = ({ player, card, status }) => {
         </p>
         <div className="middle">
           <p className="status">{status}</p>
-          {card && card.icon[0]}
-          <p className="text">{card && card.name}</p>
+          {card ? card.icon[0] : <FaRegQuestionCircle className="ready" />}
+          <p className="text">{card ? card.name : "Ready"}</p>
         </div>
         <p className="bottom-right">
           {card && card.name.slice(0, 1).toUpperCase()}

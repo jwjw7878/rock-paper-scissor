@@ -111,6 +111,9 @@ body {
   font-size: 18px;
   font-weight: bold;
 }
+.ready {
+  font-size: 50px;
+}
 .choice {
   font-size: 36px;
 }
