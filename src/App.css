@@ -63,8 +63,7 @@ body {
 .card {
   position: relative;
   font-family: "Rufina", serif;
-  width: 150px;
-  height: 200px;
+  padding: 110px 90px;
   background-color: white;
   border: 5px solid black;
   border-radius: 8px;
@@ -162,8 +161,7 @@ body {
     gap: 30px;
   }
   .card {
-    width: 120px;
-    height: 150px;
+    padding: 80px 60px;
   }
   .left-top,
   .bottom-right {
